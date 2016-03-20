@@ -1,0 +1,6 @@
+---
+- block:
+  - apt_key: keyserver=pgp.mit.edu id=AD319E0F7CFFA38B4D9F6E55CE3F3DE92099F7A4
+  - apt_repository: repo="deb http://vagrant-deb.linestarve.com/ any main"
+  - apt: name=vagrant
+  become: yes
