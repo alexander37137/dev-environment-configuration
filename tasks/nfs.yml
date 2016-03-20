@@ -1,0 +1,6 @@
+---
+- block:
+  - apt: name="nfs-common"
+  - apt: name="nfs-kernel-server"
+  become: yes
+
